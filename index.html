@@ -1,51 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohammed Sahidullah | Head Teacher</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+/* Header */
+
+header{
+background:#0a4d68;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* Navigation */
+
+nav{
+background:#088395;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+background:#05bfdb;
+}
+
+/* Container */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* Profile Section */
+
+.profile{
+text-align:center;
+margin-top:20px;
+}
+
+.profile img{
+width:300px;
+max-width:90%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+margin-bottom:20px;
+}
+
+/* About */
+
+.about{
+text-align:center;
+margin:20px 0;
+}
+
+.about a{
+color:#088395;
+font-weight:600;
+text-decoration:none;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+margin-top:20px;
+}
+
+/* Footer */
+
+footer{
+background:#0a4d68;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+/* Responsive */
+
+@media (max-width:600px){
+
+nav{
+flex-direction:column;
+}
+
+nav a{
+border-top:1px solid rgba(255,255,255,0.2);
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <h1 align="center">Welcome to My Website</h1>
-    <hr>
-    <!-- Navigation Menu -->
-    
-    <div align="center">
-        <a href="#" target="_blank" >Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Gallery</a> |
-        <a href="#">Contact</a>
-    </div>
-    
-    <hr>
-    
-    <!-- Image Section -->
-    <div align="center">
-        <img src="dad.jpeg" width="400" alt="My Image">
-    </div>  
+<header>
+<h1>Welcome to My Website</h1>
+</header>
 
-    <!-- About Section -->
-    <h1 align="center">Mohammed Sahidullah</h1>
-    <p align="center">
-        <h3 align="center">Head Teacher of <a href="https://banskhalimgps.com/" target="_blank" >Banshkhali Model Government Primary School</a></h3>
-    </p>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
 
-    <!-- Contact Section shakil -->
-    <h2 align="center">Contact</h2>
-    <p align="center">
-        Email: shahidmodel71@gmail.com <br>
-        Phone: 01818216934
-    </p>
+<div class="container">
 
-    <hr>
+<div class="profile">
+<img src="dad.jpeg" alt="Mohammed Sahidullah">
+<h2>Mohammed Sahidullah</h2>
+</div>
 
-    <!-- Footer -->
-    <p align="center">
-        © 2026 My Website. All Rights Reserved.
-    </p>
+<div class="about">
+<h3>Head Teacher of 
+<a href="https://banskhalimgps.com/" target="_blank">
+Banshkhali Model Government Primary School
+</a>
+</h3>
+</div>
+
+<div class="contact">
+<h2>Contact</h2>
+<p>Email: shahidmodel71@gmail.com</p>
+<p>Phone: 01818216934</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 My Website. All Rights Reserved.</p>
+</footer>
 
 </body>
-
 </html>
